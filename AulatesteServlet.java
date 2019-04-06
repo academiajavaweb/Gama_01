@@ -40,10 +40,10 @@ public class AulatesteServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Nome: " + getParameter("Joandysson") + "</h1>");
-            out.println("<h1>Sobre Nome: " + getParameter("Gama") + "</h1>");
-            out.println("<h1>Endereço: " + getParameter("Santo antonio Fanese") + "</h1>");
-            out.println("<h1>Telefone: " + getParameter("(00)00000-0000") + "</h1>");
-            out.println("<h1>Cidade: " + getParameter("Aracaju") + "</h1>");
+            out.println("<h1>Sobre Nome: " + request.getParameter("Gama") + "</h1>");
+            out.println("<h1>Endereço: " + request.getParameter("Santo antonio Fanese") + "</h1>");
+            out.println("<h1>Telefone: " + request.getParameter("(00)00000-0000") + "</h1>");
+            out.println("<h1>Cidade: " + request.getParameter("Aracaju") + "</h1>");
             out.println("<h1>Servlet AulatesteServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
